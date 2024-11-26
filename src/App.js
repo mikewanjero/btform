@@ -148,6 +148,7 @@ const App = () => {
         <DatePicker
           value={formData.date}
           onChange={(e) => handleDateChange(e.value)}
+          format={"dd/MM/yyyy"}
           placeholder="Select a date"
           style={{ width: "100%", marginBottom: "12px" }}
         />
