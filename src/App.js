@@ -4,6 +4,7 @@ import { Button } from "@progress/kendo-react-buttons";
 import { DatePicker } from "@progress/kendo-react-dateinputs";
 import "@progress/kendo-theme-default/dist/all.css"; // Import Kendo theme
 import colors from "../src/styles/styles";
+import phAMACoreLogo from "../src/assets/images/phAMAcore.jpeg";
 
 const App = () => {
   const [formData, setFormData] = useState({
@@ -37,13 +38,28 @@ const App = () => {
         maxWidth: "500px",
         margin: "20px auto",
         padding: "20px",
-        border: "1px solid #ccc",
+        border: "1px solid #e9e9e9",
         borderRadius: "8px",
-        backgroundColor: "#efefef",
+        backgroundColor: "#ffffff",
+        boxShadow: "0 4px 8px rgba (0, 0, 0, 0.2)",
       }}
     >
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginBottom: "20px",
+        }}
+      >
+        <img
+          src={phAMACoreLogo} // Use the imported image
+          alt="phAMACore™ logo"
+          width={"120"}
+        />
+      </div>
       <h2 style={{ textAlign: "center", color: colors.phAMACoreColor1 }}>
-        Bank Transfer Form
+        phAMACore™ Bank Transfer
       </h2>
       <label
         style={{
@@ -141,7 +157,7 @@ const App = () => {
         primary={true}
         style={{
           width: "100%",
-          backgroundColor: colors.phAMACoreColor2,
+          backgroundColor: colors.phAMACoreColor1,
           color: "#fff",
         }}
       >
