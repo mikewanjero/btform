@@ -28,7 +28,7 @@ const App = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    alert("Form submitted with data: " + JSON.stringify(formData, null, 2));
+    // alert("Form submitted with data: " + JSON.stringify(formData, null, 2));
   };
 
   return (
