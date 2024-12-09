@@ -8,3 +8,7 @@ html {
 code {
   font-family: "Poppins", sans-serif;
 }
+
+.k-picker-wrap .k-icon.k-i-calendar {
+  color: #007bff;
+}
